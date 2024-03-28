@@ -1,0 +1,63 @@
+yum install docker
+systemctl enable docekr
+systemctl enable docker
+docker ps
+systemctl start docker
+docker ps
+docker pull mysql -y   
+docker pull mysql
+docker images
+docker run -dit -e MYSQL_ROOT_PASSWORD=redhat -e MYSQL_DATABASE=mydb -e MYSQL_USER=Sunder -e MYSQL_PASSWORD=redhat mysql:latest
+docker ps
+docker run -dit  --name mywb  -p 8080:80 wordpress:latest~
+docker run -dit  --name mywb  -p 8080:80 wordpress:latest
+docker inspact  db
+docker inspect  db
+
+docker inspect Container NAme 
+docker rm -f  mystifying_joliot
+docker run -dit --name db  -e MYSQL_ROOT_PASSWORD=redhat -e MYSQL_DATABASE=mydb -e MYSQL_USER=Sunder -e MYSQL_PASSWORD=redhat mysql:latest
+docker ps
+docker rm -f  mystifying_joliot
+docker rm -f  db
+docker run -dit --name db  -e MYSQL_ROOT_PASSWORD=redhat -e MYSQL_DATABASE=mydb -e MYSQL_USER=Sunder -e MYSQL_PASSWORD=redhat mysql:latest
+docker ps
+docker  rm -f $(docker pa -a -q)
+docker  rm -f $(docker ps -a -q)
+docker ps
+docker run -dit --name db  -e MYSQL_ROOT_PASSWORD=redhat -e MYSQL_DATABASE=mydb -e MYSQL_USER=Sunder -e  /var/lib/mysql  MYSQL_PASSWORD=redhat mysql:latest
+docker ps
+     mkdir  /mydata
+     docker run -dit --name db  -e MYSQL_ROOT_PASSWORD=redhat -e MYSQL_DATABASE=mydb -e MYSQL_USER=Sunder  -e  MYSQL_PASSWORD=redhat -v /mydata:/var/lib/mysql   mysql:latest
+     docker ps
+     docker run -dit  --name mywb  -p 8080:80 wordpress:latest
+     docker ps
+     cd /mydata/
+     ls
+     pwd
+     docker rm -f db
+     docker run -dit --name db  -e MYSQL_ROOT_PASSWORD=redhat -e MYSQL_DATABASE=mydb -e MYSQL_USER=Sunder  -e  MYSQL_PASSWORD=redhat -v /mydata:/var/lib/mysql   mysql:latest
+     docker rm -f $(docker ps -a -q)
+    docker run -dit --name os1 ubuntu:14.04
+    docker run -dit --name os2 ubuntu:14.04
+     docker ps
+     docker attach os2
+     cd
+     docker rm -f $(docker ps -a -q)
+     docker run -dit --name os1 ubuntu:14.04
+     docker run -dit --name os2  --link os1 ubuntu:14.04
+     docker ps
+     docker attach osw
+     docker attach os2
+     history 
+     docker rm -f $(docker ps -a -q)
+     docker run -dit --name db  -e MYSQL_ROOT_PASSWORD=redhat -e MYSQL_DATABASE=mydb -e MYSQL_USER=Sunder  -e  MYSQL_PASSWORD=redhat -v /mydata:/var/lib/mysql   mysql:latest
+     docker run -dit  --name mywb  -p 8080:80 --link db  wordpress:latest
+     docker rm -f $(docker ps -a -q)
+     exit
+     docker ps
+     ifconfig
+     ping 172.17.0.3
+     docker aattach os1
+     docker attach os1
+
